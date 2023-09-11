@@ -1,0 +1,58 @@
+body {
+  background-color: antiquewhite;
+}
+/* Player boxes */
+.player1,
+.player2 {
+  text-align: center;
+}
+
+/* Player - Score boxes */
+#player1-Score,
+#player2-Score {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.player1 span,
+.player2 span {
+  display: grid;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+}
+
+.player1 span,
+.player2 span {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(85, 83, 83);
+  color: white;
+}
+
+/* Player title */
+h1 {
+  display: grid;
+  align-items: center;
+  margin-bottom: 0;
+}
+h1 {
+  width: 200px;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h1 {
+  background-color: rgb(85, 83, 83);
+  border: 2px solid black;
+  color: white;
+}
+/* Player container */
+.player-con {
+  display: flex;
+  justify-content: space-evenly;
+}
