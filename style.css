@@ -1,5 +1,6 @@
 body {
   background-color: antiquewhite;
+  margin-top: 5px;
 }
 /* Player boxes */
 .player1,
@@ -38,6 +39,7 @@ h1 {
   display: grid;
   align-items: center;
   margin-bottom: 0;
+  margin-top: 10px;
 }
 h1 {
   width: 200px;
@@ -90,4 +92,32 @@ h1 {
   font-weight: 800;
   text-align: center;
   align-items: center;
+  width: 72.07px;
+  height: 72.07px;
+}
+
+/* winner tosat */
+.winner-Toast {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: navy;
+  width: 250px;
+}
+
+.winner-Toast {
+  text-align: center;
+  border: 2px solid black;
+  color: white;
+}
+
+/* winning button */
+#play-again {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 25px;
+  font-weight: 800;
 }
