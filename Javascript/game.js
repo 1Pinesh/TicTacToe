@@ -39,25 +39,30 @@ const ticTacToeGame = () => {
 
   const updateCell = (index) => {
     const cell = cells[index];
+    const winTitle = document.getElementById("wintitle");
+    const playerXScore = document.getElementById("player1-Score");
+    const player0Score = document.getElementById("player2-Score");
     if (gameBoard[index] === "" && gameActive) {
       gameBoard[index] = currentPlayer;
       cell.textContent = currentPlayer;
 
       const winner = checkWin();
       console.log(winner);
-      if (winner) {
+
+      if (winner === "draw") {
+        winnerSection.style.display = "block";
+        winTitle.textContent = "It Is A Tie";
+      } else if (winner) {
         if (winner === playerX) {
           winnerSection.style.display = "block";
-          let playerXScore = document.getElementById("player1-Score");
-          let playerXWin = document.getElementById("wintitle");
+
           playerXScore.textContent = parseInt(playerXScore.textContent) + 1;
-          playerXWin.textContent = "Player X Win";
+          winTitle.textContent = "Player X Win";
         } else if (winner === playerO) {
           winnerSection.style.display = "block";
-          let player0Win = document.getElementById("wintitle");
-          let player0Score = document.getElementById("player2-Score");
+
           player0Score.textContent = parseInt(player0Score.textContent) + 1;
-          player0Win.textContent = "Player O Win";
+          winTitle.textContent = "Player O Win";
         }
       } else {
         currentPlayer = currentPlayer === playerX ? playerO : playerX;
