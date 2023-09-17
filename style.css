@@ -4,8 +4,21 @@ body {
 }
 /* Intro box */
 #intro {
+  display: flex;
+  flex-direction: column;
+}
+
+#intro h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+#intro {
   background-image: url(./cc.webp);
-  width: 500px;
+  width: 550px;
   height: 500px;
   position: absolute;
   top: 10%;
@@ -56,7 +69,7 @@ input {
 /* Game-con */
 .game-con {
   position: absolute;
-  width: 550px;
+  width: 500px;
   bottom: 25%;
   right: 33%;
 }
@@ -159,16 +172,17 @@ h1 {
 .winner-Toast {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 115%;
   right: 50%;
   transform: translate(50%, -50%);
-  background-color: navy;
+  background-color: black;
   width: 250px;
 }
 
 .winner-Toast {
   text-align: center;
   border: 2px solid black;
+  border-radius: 5px;
   color: white;
 }
 
