@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="intro">
+    <div id="intro">
       <div class="player-name">
         <label for="player-Name1"
           >Payer 1 Name
@@ -33,12 +33,12 @@
     <div class="game-con">
       <section class="player-con">
         <div class="player1">
-          <h1>Player 1</h1>
+          <h1 id="p1">Player 1</h1>
           <span id="player1-Score">0</span>
         </div>
         <div class="player2">
           <div class="player2">
-            <h1>Player 2</h1>
+            <h1 id="p2">Player 2</h1>
             <span id="player2-Score">0</span>
           </div>
         </div>
@@ -62,7 +62,7 @@
         <button id="play-again">Play Again</button>
       </section>
     </div>
-
-    <script src="./Javascript/game.js"></script>
+    <script src="./Javascript/intro.js"></script>
+    <script defer src="./Javascript/game.js"></script>
   </body>
 </html>
