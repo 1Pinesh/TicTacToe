@@ -2,6 +2,55 @@ body {
   background-color: antiquewhite;
   margin-top: 5px;
 }
+/* Intro box */
+.intro {
+  background-image: url(./cc.webp);
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 10%;
+  left: 34%;
+  border-radius: 10px;
+  z-index: 999;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Label */
+label {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-top: 10px;
+}
+/* start btn */
+#start {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Game-con */
+.game-con {
+  position: absolute;
+  width: 550px;
+  bottom: 25%;
+  right: 33%;
+}
+
 /* Player boxes */
 .player1,
 .player2 {

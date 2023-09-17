@@ -7,36 +7,61 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="player-con">
-      <div class="player1">
-        <h1>Player 1</h1>
-        <span id="player1-Score">0</span>
-      </div>
-      <div class="player2">
-        <div class="player2">
-          <h1>Player 2</h1>
-          <span id="player2-Score">0</span>
-        </div>
-      </div>
-    </section>
-    <section class="gameBoard">
-      <div class="gameBoard-con">
-        <div id="cell1" class="cells"></div>
-        <div id="cell2" class="cells"></div>
-        <div id="cell3" class="cells"></div>
-        <div id="cell4" class="cells"></div>
-        <div id="cell5" class="cells"></div>
-        <div id="cell6" class="cells"></div>
-        <div id="cell7" class="cells"></div>
-        <div id="cell8" class="cells"></div>
-        <div id="cell9" class="cells"></div>
-      </div>
-    </section>
+    <div class="intro">
+      <div class="player-name">
+        <label for="player-Name1"
+          >Payer 1 Name
+          <input
+            type="text"
+            id="pName1"
+            name="pname"
+            placeholder="type player 1 Name"
+        /></label>
 
-    <section id="winner-Toast" class="winner-Toast">
-      <h2 aria-label="winenr-title"><span id="wintitle"></span></h2>
-      <button id="play-again">Play Again</button>
-    </section>
+        <label for="player-Name2"
+          >Player 2 Name
+          <input
+            type="text"
+            id="pName2"
+            name="pname"
+            placeholder="type player 2 Name"
+        /></label>
+        <button id="start">Start</button>
+      </div>
+    </div>
+
+    <div class="game-con">
+      <section class="player-con">
+        <div class="player1">
+          <h1>Player 1</h1>
+          <span id="player1-Score">0</span>
+        </div>
+        <div class="player2">
+          <div class="player2">
+            <h1>Player 2</h1>
+            <span id="player2-Score">0</span>
+          </div>
+        </div>
+      </section>
+      <section class="gameBoard">
+        <div class="gameBoard-con">
+          <div id="cell1" class="cells"></div>
+          <div id="cell2" class="cells"></div>
+          <div id="cell3" class="cells"></div>
+          <div id="cell4" class="cells"></div>
+          <div id="cell5" class="cells"></div>
+          <div id="cell6" class="cells"></div>
+          <div id="cell7" class="cells"></div>
+          <div id="cell8" class="cells"></div>
+          <div id="cell9" class="cells"></div>
+        </div>
+      </section>
+
+      <section id="winner-Toast" class="winner-Toast">
+        <h2 aria-label="winenr-title"><span id="wintitle"></span></h2>
+        <button id="play-again">Play Again</button>
+      </section>
+    </div>
 
     <script src="./Javascript/game.js"></script>
   </body>
